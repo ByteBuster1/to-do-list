@@ -1,0 +1,82 @@
+body {
+    font-family: Arial, sans-serif;
+    background-image:url('bg.webp');
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.todo-container {
+    padding: 20px;
+    background-color:rgb(219, 197, 109);
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 300px;
+    /* backdrop-filter: blur(10px);Applies a blur effect to the background */
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+#task-input {
+    width: calc(100% - 20px);
+    padding: 10px;
+    margin-bottom: 10px;
+    font-size: 16px;
+    
+}
+
+#add-task-btn {
+    width: 100%;
+    padding: 10px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+#task-list {
+    color: rgb(10, 10, 10);
+    list-style-type: none;
+    padding: 0;
+}
+
+#task-list li {
+    padding: 10px;
+    border-bottom: 1px solid #ccc;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.completed {
+    text-decoration: line-through;
+    color: gray;
+}
+
+.delete-btn {
+    background-color: #ff4d4d;
+    color: white;
+    border: none;
+    padding: 5px;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+.delete-btn:hover {
+    background-color: #e60000;
+}
+
+#task-input::placeholder{
+    color: black;
+}
+#add-task-btn:hover{
+    background-color:#125f15
+}
